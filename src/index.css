@@ -1,0 +1,518 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --civil-blue: #3b82f6;
+    --civil-teal: #0d9488;
+    --civil-amber: #f59e0b;
+    --civil-rose: #f43f5e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* Thème clair */
+body.light {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    color: #1e293b;
+}
+
+/* Thème sombre */
+body.dark {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #f8fafc;
+}
+
+/* Glassmorphism */
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass {
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Header arrondi avec espacement */
+.rounded-header {
+    border-radius: 20px;
+    margin: 1rem auto;
+    max-width: calc(100% - 2rem);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Bouton thème élégant */
+.theme-toggle {
+    background: linear-gradient(135deg, var(--civil-blue), var(--civil-teal));
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+}
+
+/* Navigation épurée */
+.nav-item {
+    position: relative;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-item:hover {
+    background: rgba(59, 130, 246, 0.1);
+    transform: translateY(-2px);
+}
+
+.nav-item.active {
+    background: linear-gradient(135deg, var(--civil-blue), var(--civil-teal));
+    color: white;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+/* Scroll personnalisé doux */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--civil-blue);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--civil-teal);
+}
+
+/* Animations douces */
+@keyframes gentleGlow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(59, 130, 246, 0.2);
+    }
+}
+
+.gentle-glow {
+    animation: gentleGlow 3s ease-in-out infinite;
+}
+
+/* Indicateur de navigation */
+.nav-indicator {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--civil-blue);
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+}
+
+.nav-item.active .nav-indicator {
+    width: 20px;
+    height: 3px;
+    border-radius: 2px;
+}
+
+/* Ajouter ces styles à la fin du fichier globals.css */
+
+/* Améliorations pour le light mode */
+.light .glass {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.light .nav-item:hover {
+    background: rgba(59, 130, 246, 0.1);
+}
+
+.light .nav-item.active {
+    background: linear-gradient(135deg, var(--civil-blue), var(--civil-teal));
+    color: white;
+}
+
+/* Correction des couleurs des indicateurs */
+.light .nav-indicator {
+    background: var(--civil-teal);
+}
+
+/* Amélioration de la visibilité en light mode */
+.light {
+    color: #374151;
+}
+
+.light .text-gray-300 {
+    color: #6b7280;
+}
+
+.light .bg-gray-800 {
+    background-color: #e5e7eb;
+}
+
+.light .bg-gray-900 {
+    background-color: #f3f4f6;
+}
+
+/* Tooltips en light mode */
+.light .tooltip {
+    background: white;
+    color: #1f2937;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Amélioration des bordures en light mode */
+.light .border-gray-700 {
+    border-color: #d1d5db;
+}
+
+.light .border-playstation-blue {
+    border-color: rgba(59, 130, 246, 0.3);
+}
+
+/* Ajouter à globals.css */
+
+/* Optimisations responsive */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .glass {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+/* Amélioration des transitions */
+.glass {
+    transition: all 0.3s ease;
+}
+
+/* Effet de hover subtil sur les cartes */
+.glass:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.dark .glass:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Animation douce pour l'apparition */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Ajouter à globals.css */
+
+/* Animation pour l'apparition des éléments de timeline */
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.timeline-item {
+    animation: slideInFromLeft 0.6s ease-out forwards;
+}
+
+.timeline-item:nth-child(1) { animation-delay: 0.1s; }
+.timeline-item:nth-child(2) { animation-delay: 0.2s; }
+.timeline-item:nth-child(3) { animation-delay: 0.3s; }
+
+/* Effet de hover sur les cartes */
+.hover-lift {
+    transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.dark .hover-lift:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Gradient animé pour les bordures */
+.gradient-border {
+    position: relative;
+}
+
+.gradient-border::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, var(--civil-blue), var(--civil-teal), var(--civil-amber), var(--civil-rose));
+    border-radius: inherit;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gradient-border:hover::before {
+    opacity: 1;
+}
+
+/* Ajouter à globals.css */
+
+/* Couleurs pour les expériences */
+.bg-civil-blue {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+}
+
+.bg-civil-teal {
+    background: linear-gradient(135deg, #0d9488, #0f766e);
+}
+
+.bg-civil-amber {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+/* Animations pour l'expansion */
+.expandable-content {
+    animation: slideDown 0.3s ease-out forwards;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        max-height: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        max-height: 1000px;
+        transform: translateY(0);
+    }
+}
+
+/* Effet de hover sur les cartes */
+.experience-card {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.05), transparent);
+    transition: left 0.5s;
+}
+
+.experience-card:hover::before {
+    left: 100%;
+}
+
+/* Animation des statistiques */
+@keyframes countUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.stats-item {
+    animation: countUp 0.6s ease-out forwards;
+}
+
+.stats-item:nth-child(1) { animation-delay: 0.1s; }
+.stats-item:nth-child(2) { animation-delay: 0.2s; }
+.stats-item:nth-child(3) { animation-delay: 0.3s; }
+.stats-item:nth-child(4) { animation-delay: 0.4s; }
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .experience-info {
+        width: 100%;
+    }
+}
+
+/* Ajouter à globals.css */
+
+/* Animation pour les cartes de projet */
+.project-card {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.1), transparent);
+    transition: left 0.6s;
+}
+
+.project-card:hover::before {
+    left: 100%;
+}
+
+/* Limiter le texte à 2 lignes */
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Animation d'apparition pour les projets */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+
+
+
+
+
+
+
+
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-card {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.project-card:nth-child(1) { animation-delay: 0.1s; }
+.project-card:nth-child(2) { animation-delay: 0.2s; }
+.project-card:nth-child(3) { animation-delay: 0.3s; }
+.project-card:nth-child(4) { animation-delay: 0.4s; }
+.project-card:nth-child(5) { animation-delay: 0.5s; }
+.project-card:nth-child(6) { animation-delay: 0.6s; }
+
+/* Animation pour la modal */
+@keyframes modalEnter {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.fixed.inset-0.z-50 {
+    animation: modalEnter 0.3s ease-out;
+}
+
+/* Scrollbar personnalisée pour la modal */
+.overflow-y-auto::-webkit-scrollbar {
+    width: 6px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 3px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+    background: #0d9488;
+}
+
+/* Effet de gradient sur les images de projet */
+.project-image {
+    background: linear-gradient(135deg, #3b82f6, #0d9488, #f59e0b);
+    background-size: 200% 200%;
+    animation: gradientShift 6s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-content {
+        margin: 1rem;
+        max-height: calc(100vh - 2rem);
+    }
+}

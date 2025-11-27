@@ -1,0 +1,281 @@
+{
+  "personalInfo": {
+    "fullName": "Eric Oswald OBAMA AWONO",
+    "title": "INGENIEUR en spécialité génie civil et développement durable",
+    "location": "Dijon, France",
+    "phone": "+33 7 43 66 85 98",
+    "email": "ericobama0703@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/eric-oswald-obama-awono-0a4684279",
+    "photo": "/images/profile.jpg",
+    "status": "Disponible pour un stage à partir de juin",
+    "tagline": "Innovative Solutions in Sustainable Infrastructure: Designing Resilient and Eco-Friendly Civil Engineering Projects",
+    "description": "I'm a motivated Civil Engineer with 2 years of experience in structural design, site supervision, and BIM modeling. I bring a solid foundation in engineering principles, combined with hands-on knowledge of tools like AutoCAD, Revit, Civil 3D, and Robot Structural Analysis. I've supported the successful execution of residential and commercial building projects by coordinating teams, managing deadlines, and ensuring on-site quality control. Beyond technical skills, I'm known for being detail-oriented, proactive, and a strong communicator --- essential for effective project coordination. I also bring a working knowledge of sustainable design principles, lean construction methods, and digital collaboration tools (like BIM 360), which are increasingly vital in today's construction market.",
+    "cvUrl": "/documents/cv-eric-obama.pdf",
+    "icons": {
+      "location": "map-pin",
+      "phone": "phone",
+      "email": "mail",
+      "linkedin": "linkedin",
+      "download": "download"
+    }
+  },
+
+  "navigation": [
+    {"id": "home", "label": "Accueil", "icon": "home"},
+    {"id": "about", "label": "Profil", "icon": "user"},
+    {"id": "skills", "label": "Compétences", "icon": "award"},
+    {"id": "experience", "label": "Expérience", "icon": "briefcase"},
+    {"id": "projects", "label": "Projets", "icon": "folder"},
+    {"id": "contact", "label": "Contact", "icon": "message-circle"}
+  ],
+
+  "skills": {
+    "technical": [
+      {"name": "Autodesk Revit", "level": 90, "icon": "cube", "category": "BIM"},
+      {"name": "Autodesk AutoCAD", "level": 90, "icon": "draw-polygon", "category": "DAO"},
+      {"name": "Autodesk Robot Structural Analysis", "level": 90, "icon": "calculator", "category": "Structure"},
+      {"name": "MS Project", "level": 90, "icon": "chart-line", "category": "Gestion"},
+      {"name": "Suite Office", "level": 75, "icon": "file-alt", "category": "Bureautique"},
+      {"name": "Maitrise de Eurocode", "level": 70, "icon": "balance-scale", "category": "Normes"},
+      {"name": "Graitec", "level": 70, "icon": "cube", "category": "Structure"},
+      {"name": "Python", "level": 50, "icon": "code", "category": "Programmation"}
+    ],
+    "professional": [
+      "Calcul et dimensionnement de structures béton armé et précontraint",
+      "Structures acier et structures mixtes",
+      "Utilisation fluide des Eurocodes 0, 1, 2, 3, 4, 7, 8",
+      "Gestion de projet et management des équipes",
+      "Diagnostic des structures et réhabilitation",
+      "Contrôle qualité et méthodes d'exécution",
+      "Modélisation (Sofistik, Robot, Arche, Advance)",
+      "Communication efficace et travail en équipe",
+      "Programmation (Python, VBA)",
+      "DAO (AutoCAD, Revit)"
+    ]
+  },
+
+  "languages": [
+    {"language": "Français", "level": "Langue maternelle", "icon": "language"},
+    {"language": "Anglais", "level": "TOEIC (B2)", "icon": "language"}
+  ],
+
+  "interests": {
+    "travel": {"items": ["Ethiopie", "Luxembourg", "Allemagne", "Suisse", "Espagne"], "icon": "map-marked-alt"},
+    "reading": {"items": ["Critical thinking", "Good to Great", "Never split the difference"], "icon": "book"},
+    "sports": {"items": ["Football", "Gym"], "icon": "running"}
+  },
+
+  "experience": [
+    {
+      "startDate": "2025-02-01",
+      "endDate": "2025-09-30",
+      "company": "KALITAS CONSTRUCTION Sari",
+      "position": "Coordinateur des travaux/ Ingénieur de suivie",
+      "location": "France",
+      "icon": "hard-hat",
+      "description": "Gestion et coordination de chantiers, assurance du respect des normes de qualité et des délais",
+      "projects": [
+        {
+          "name": "Projet de réalisation d'un bâtiment de type R+3 à usage d'habitation",
+          "tasks": [
+            "Élaboration de plannings détaillés des travaux",
+            "Gestion des ressources",
+            "Suivi de l'avancement des travaux",
+            "Coordination et encadrement des équipes"
+          ]
+        },
+        {
+          "name": "Projet de Finition d'un bâtiment de type R+1 à usage d'habitation",
+          "tasks": [
+            "Création des plannings détaillés pour chaque phase du projet",
+            "Optimisation de l'allocation des ressources",
+            "Avancement des travaux pour respecter les délais et la qualité",
+            "Coordination des équipes et favorisation de la collaboration"
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2023-09-01",
+      "endDate": "2025-02-28",
+      "company": "AFRIKAN METHOD",
+      "position": "Ingénieur structure/ BIM modeleur/Projecteur",
+      "location": "Cameroun",
+      "icon": "blueprint",
+      "description": "Études techniques, modélisation BIM et conception de structures",
+      "projects": [
+        {
+          "name": "Projet de construction du palais de justice de Ngoumou",
+          "tasks": [
+            "Études, modélisation et dimensionnement des structures béton",
+            "Utilisation de Robot structural analysis, RSA et Gratice",
+            "Élaboration de la maquette numérique BIM sous Revit",
+            "Production des notes de calcul et plans d'exécution",
+            "Évaluation de l'efficacité énergétique du bâtiment",
+            "Rédaction de rapports techniques (CCTP, DQR, DCE, Cahier des Charges)"
+          ]
+        },
+        {
+          "name": "Projet de construction du laboratoire de contrôle qualité des produits agricoles de Douala",
+          "tasks": [
+            "Études, modélisation et dimensionnement des structures béton",
+            "Utilisation de Robot structural analysis, RSA et Gratice",
+            "Élaboration de la maquette numérique BIM sous Revit",
+            "Production des notes de calcul et plans d'exécution",
+            "Analyse énergétique et évaluation de l'efficacité énergétique",
+            "Étude des fluides via Revit MEP"
+          ]
+        }
+      ]
+    },
+    {
+      "startDate": "2023-01-01",
+      "endDate": "2023-07-31",
+      "company": "CAMBUILD BTP",
+      "position": "Stagiaire",
+      "location": "Cameroun",
+      "icon": "toolbox",
+      "description": "Stage de fin d'études en conduite de travaux",
+      "projects": [
+        {
+          "name": "Construction d'un bâtiment de type R+3 à usage scolaire (extension du collège Libermann)",
+          "tasks": [
+            "Rédaction des dossiers techniques",
+            "Supervision de la conformité du béton en usine",
+            "Contrôle durant la phase de réalisation",
+            "Élaboration de plannings détaillés des travaux",
+            "Évaluation préalable de l'impact environnemental et social du projet"
+          ]
+        }
+      ]
+    }
+  ],
+
+  "education": [
+    {
+      "startDate": "2025-09-01",
+      "endDate": "2027-06-30",
+      "degree": "Diplome d'ingénieur - option construction durable",
+      "institution": "ESTP Paris - Campus Dijon",
+      "location": "Dijon, France",
+      "icon": "graduation-cap"
+    },
+    {
+      "startDate": "2018-10-01",
+      "endDate": "2023-06-30",
+      "degree": "Diplome d'ingénieur spécialité génie civil",
+      "institution": "Ecole Nationale Supérieure Polytechnique de Douala (ENSPD)",
+      "location": "Douala, Cameroun",
+      "icon": "graduation-cap"
+    },
+    {
+      "startDate": "2011-09-01",
+      "endDate": "2018-06-30",
+      "degree": "Baccalauréat C",
+      "institution": "Collège F.X. Vogt",
+      "location": "Yaoundé, Cameroun",
+      "icon": "graduation-cap"
+    }
+  ],
+
+  "services": [
+    {
+      "name": "Etudes techniques grâce à une maquette BIM",
+      "description": "Réalisation d'études techniques approfondies en utilisant des maquettes numériques BIM (Modélisation de l'information du bâtiment) pour optimiser la conception et la planification des projets",
+      "icon": "cube"
+    },
+    {
+      "name": "Coordinateur des travaux et suivi qualité des ouvrages",
+      "description": "Gestion et coordination des chantiers, assurant le respect des normes de qualité et des délais, tout en garantissant une communication fluide entre les différents intervenants",
+      "icon": "hard-hat"
+    },
+    {
+      "name": "Conception des plans architecturaux et des maquettes BIM",
+      "description": "Élaboration de conceptions architecturales innovantes accompagnées de maquettes BIM pour visualiser et simuler le projet avant sa réalisation, facilitant ainsi la prise de décision",
+      "icon": "drawing"
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "Projet de construction du palais de justice de Ngoumou",
+      "category": "Étude technique",
+      "image": "/images/projects/ngoumou.jpg",
+      "startDate": "2023-09-01",
+      "endDate": "2024-03-31",
+      "description": "Étude technique complète pour la construction d'un palais de justice",
+      "tasks": [
+        "Études, modélisation et dimensionnement des structures béton",
+        "Élaboration de la maquette numérique BIM sous Revit",
+        "Production des notes de calcul et plans d'exécution",
+        "Évaluation de l'efficacité énergétique du bâtiment"
+      ],
+      "technologies": ["Revit", "Robot Structural Analysis", "AutoCAD", "Graitec"],
+      "downloadableFiles": [
+        {"name": "Rapport technique complet", "url": "/documents/ngoumou-rapport.pdf", "type": "pdf", "icon": "file-pdf"},
+        {"name": "Plans d'exécution", "url": "/documents/ngoumou-plans.zip", "type": "zip", "icon": "file-archive"},
+        {"name": "Maquette BIM", "url": "/documents/ngoumou-bim.rvt", "type": "rvt", "icon": "cube"}
+      ]
+    },
+    {
+      "name": "Projet de construction du laboratoire de contrôle qualité des produits agricoles de Douala",
+      "category": "Étude technique",
+      "image": "/images/projects/pdcva.jpg",
+      "startDate": "2024-01-01",
+      "endDate": "2024-06-30",
+      "description": "Laboratoire de contrôle qualité avec études techniques avancées",
+      "tasks": [
+        "Études, modélisation et dimensionnement des structures béton",
+        "Élaboration de la maquette numérique BIM sous Revit",
+        "Analyse énergétique du bâtiment",
+        "Étude des fluides via Revit MEP"
+      ],
+      "technologies": ["Revit", "Robot Structural Analysis", "Revit MEP", "AutoCAD"],
+      "downloadableFiles": [
+        {"name": "Étude structure complète", "url": "/documents/pdcva-etude.pdf", "type": "pdf", "icon": "file-pdf"},
+        {"name": "Analyse énergétique", "url": "/documents/pdcva-energie.pdf", "type": "pdf", "icon": "file-pdf"},
+        {"name": "Plans MEP", "url": "/documents/pdcva-mep.zip", "type": "zip", "icon": "file-archive"}
+      ]
+    },
+    {
+      "name": "Construction d'un bâtiment de type R+3 à usage scolaire",
+      "category": "Contrôle qualité/Coordination",
+      "image": "/images/projects/liberman.jpg",
+      "startDate": "2023-02-01",
+      "endDate": "2023-07-31",
+      "description": "Extension scolaire avec contrôle qualité et coordination des travaux",
+      "tasks": [
+        "Rédaction des dossiers techniques",
+        "Supervision de la conformité du béton",
+        "Contrôle durant la phase de réalisation",
+        "Élaboration de plannings détaillés"
+      ],
+      "technologies": ["MS Project", "AutoCAD", "Suite Office"],
+      "downloadableFiles": [
+        {"name": "Dossier technique", "url": "/documents/liberman-dossier.pdf", "type": "pdf", "icon": "file-pdf"},
+        {"name": "Planning des travaux", "url": "/documents/liberman-planning.mpp", "type": "mpp", "icon": "chart-line"},
+        {"name": "Rapport de contrôle qualité", "url": "/documents/liberman-qualite.pdf", "type": "pdf", "icon": "file-pdf"}
+      ]
+    }
+  ],
+
+  "contact": {
+    "address": "14 Avenue Alain Savary, Dijon, France",
+    "phone": "+33 743 668 598",
+    "email": "ericobama0703@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/eric-oswald-obama-awono-0a4684279"
+  },
+
+  "callToAction": {
+    "title": "Prêt à collaborer sur votre prochain projet ?",
+    "description": "Discutons de vos besoins en génie civil et développement durable",
+    "buttonText": "Me contacter",
+    "icon": "envelope"
+  },
+
+  "socialMedia": {
+    "linkedin": "https://www.linkedin.com/in/eric-oswald-obama-awono-0a4684279",
+    "github": "#",
+    "twitter": "#"
+  }
+}
