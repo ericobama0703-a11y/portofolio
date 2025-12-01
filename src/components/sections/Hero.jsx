@@ -1,9 +1,11 @@
+
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload, faArrowDown, faEye } from '@fortawesome/free-solid-svg-icons';
 
 const Hero = ({ personalInfo, isDark }) => {
-    const { fullName, title, tagline, description, cvUrl } = personalInfo;
+
+    const { fullName, title, tagline, description, cvUrl, photo } = personalInfo;
 
     const handleDownloadCV = () => {
         if (cvUrl) {
@@ -27,26 +29,38 @@ const Hero = ({ personalInfo, isDark }) => {
             <div className="w-full">
                 {/* Container avec la même largeur que le header */}
                 <div className="container mx-auto px-6">
-                    <div className={`glass rounded-3xl p-8 md:p-12 ${isDark ? 'bg-gray-900/30' : 'bg-white/30'} max-w-6xl mx-auto`}>
+                    <div className={glass rounded-3xl p-8 md:p-12 ${isDark ? 'bg-gray-900/30' : 'bg-white/30'} max-w-6xl mx-auto}>
 
                         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12">
 
                             {/* Colonne gauche - Avatar et informations */}
                             <div className="flex-shrink-0 text-center lg:text-left">
-                                {/* Avatar amélioré */}
+
                                 <div className="w-48 h-48 mx-auto lg:mx-0 rounded-2xl bg-gradient-to-br from-civil-blue to-civil-teal p-2 mb-6">
-                                    <div className={`w-full h-full rounded-2xl ${isDark ? 'bg-gray-800' : 'bg-white'} flex items-center justify-center`}>
-                                        <div className="text-center">
-                      <span className="text-4xl font-bold bg-gradient-to-br from-civil-blue to-civil-teal bg-clip-text text-transparent">
-                        EO
-                      </span>
-                                            <div className={`w-16 h-1 mx-auto mt-2 rounded-full bg-gradient-to-r from-civil-blue to-civil-teal`}></div>
+                                    {photo ? (
+                                        // Si une photo est disponible
+                                        <div className="w-full h-full rounded-2xl overflow-hidden">
+                                            <img
+                                                src={photo}
+                                                alt={fullName}
+                                                className="w-full h-full object-cover"
+                                            />
                                         </div>
-                                    </div>
+                                    ) : (
+                                        // Sinon, afficher le placeholder avec initiales
+                                        <div className={w-full h-full rounded-2xl ${isDark ? 'bg-gray-800' : 'bg-white'} flex items-center justify-center}>
+                                            <div className="text-center">
+                                                <span className="text-4xl font-bold bg-gradient-to-br from-civil-blue to-civil-teal bg-clip-text text-transparent">
+                                                    EO
+                                                </span>
+                                                <div className={w-16 h-1 mx-auto mt-2 rounded-full bg-gradient-to-r from-civil-blue to-civil-teal}></div>
+                                            </div>
+                                        </div>
+                                    )}
                                 </div>
 
                                 {/* Informations de contact rapides */}
-                                <div className={`space-y-3 ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
+                                <div className={space-y-3 ${isDark ? 'text-gray-300' : 'text-gray-600'}}>
                                     <div className="flex items-center justify-center lg:justify-start gap-3">
                                         <div className="w-2 h-2 rounded-full bg-civil-blue"></div>
                                         <span className="text-sm">Disponible pour stage</span>
@@ -67,13 +81,12 @@ const Hero = ({ personalInfo, isDark }) => {
                                     </h1>
 
                                     <div className="flex flex-col sm:flex-row items-center gap-4 mb-6">
-                                        <p className={`text-xl md:text-2xl font-semibold ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
+                                        <p className={text-xl md:text-2xl font-semibold ${isDark ? 'text-gray-300' : 'text-gray-600'}}>
                                             {title}
                                         </p>
-                                        <div className="hidden sm:block w-1 h-6 rounded-full bg-civil-blue"></div>
-                                        <div className={`px-4 py-2 rounded-full text-sm font-medium ${
-                                            isDark ? 'bg-civil-blue/20 text-civil-blue' : 'bg-civil-teal/20 text-civil-teal'
-                                        }`}>
+                                        <div className="hidden sm:block w-1 h-10 rounded-full bg-civil-blue"></div>
+                                        <div className={`px-10 py-2 rounded-full w-fit flex text-sm font-medium ${isDark ? 'bg-civil-blue/20 text-civil-blue' : 'bg-civil-teal/20 text-civil-teal'
+                                            }`}>
                                             ESTP Paris
                                         </div>
                                     </div>
@@ -81,14 +94,14 @@ const Hero = ({ personalInfo, isDark }) => {
 
                                 {/* Tagline */}
                                 <div className="mb-8">
-                                    <p className={`text-lg md:text-xl leading-relaxed ${isDark ? 'text-gray-400' : 'text-gray-500'} italic`}>
+                                    <p className={text-lg md:text-xl leading-relaxed ${isDark ? 'text-gray-400' : 'text-gray-500'} italic}>
                                         "{tagline}"
                                     </p>
                                 </div>
 
                                 {/* Description */}
                                 <div className="mb-8">
-                                    <p className={`text-base leading-relaxed ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
+                                    <p className={text-base leading-relaxed ${isDark ? 'text-gray-300' : 'text-gray-600'}}>
                                         {description}
                                     </p>
                                 </div>
@@ -97,18 +110,17 @@ const Hero = ({ personalInfo, isDark }) => {
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mt-12">
                                     <button
                                         onClick={handleViewProjects}
-                                        className={`px-8 py-4 rounded-xl font-semibold transition-all duration-300 bg-gradient-to-br from-civil-blue to-civil-teal text-white shadow-lg hover:shadow-xl hover:scale-105 flex items-center gap-3 min-w-[200px] justify-center`}
+                                        className={px-8 py-4 rounded-xl font-semibold transition-all duration-300 bg-gradient-to-br from-civil-blue to-civil-teal text-white shadow-lg hover:shadow-xl hover:scale-105 flex items-center gap-3 min-w-[200px] justify-center}
                                     >
                                         <FontAwesomeIcon icon={faEye} />
                                         Voir mes projets
                                     </button>
                                     <button
                                         onClick={handleDownloadCV}
-                                        className={`px-8 py-4 rounded-xl font-semibold transition-all duration-300 border-2 ${
-                                            isDark
+                                        className={`px-8 py-4 rounded-xl font-semibold transition-all duration-300 border-2 ${isDark
                                                 ? 'border-civil-blue text-civil-blue hover:bg-civil-blue hover:text-white'
                                                 : 'border-civil-teal text-civil-teal hover:bg-civil-teal hover:text-white'
-                                        } flex items-center gap-3 min-w-[200px] justify-center`}
+                                            } flex items-center gap-3 min-w-[200px] justify-center`}
                                     >
                                         <FontAwesomeIcon icon={faDownload} />
                                         Télécharger CV
@@ -123,19 +135,16 @@ const Hero = ({ personalInfo, isDark }) => {
                                 onClick={scrollToAbout}
                                 className="animate-bounce flex flex-col items-center gap-2 mx-auto group"
                             >
-                                <div className={`w-10 h-16 border-2 rounded-full flex justify-center items-start pt-3 transition-all duration-300 group-hover:border-civil-teal ${
-                                    isDark ? 'border-civil-blue' : 'border-civil-teal'
-                                }`}>
+                                <div className={`w-10 h-16 border-2 rounded-full flex justify-center items-start pt-3 transition-all duration-300 group-hover:border-civil-teal ${isDark ? 'border-civil-blue' : 'border-civil-teal'
+                                    }`}>
                                     <FontAwesomeIcon
                                         icon={faArrowDown}
-                                        className={`w-4 h-4 transition-all duration-300 group-hover:text-civil-teal ${
-                                            isDark ? 'text-civil-blue' : 'text-civil-teal'
-                                        }`}
+                                        className={`w-4 h-4 transition-all duration-300 group-hover:text-civil-teal ${isDark ? 'text-civil-blue' : 'text-civil-teal'
+                                            }`}
                                     />
                                 </div>
-                                <p className={`text-sm transition-all duration-300 group-hover:text-civil-teal ${
-                                    isDark ? 'text-gray-400' : 'text-gray-500'
-                                }`}>
+                                <p className={`text-sm transition-all duration-300 group-hover:text-civil-teal ${isDark ? 'text-gray-400' : 'text-gray-500'
+                                    }`}>
                                     Explorer mon profil
                                 </p>
                             </button>
