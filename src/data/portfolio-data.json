@@ -101,7 +101,7 @@
       "company": "AFRIKAN METHOD",
       "position": "Ingénieur structure/ BIM modeleur/Projecteur",
       "location": "Cameroun",
-      "icon": "blueprint",
+      "icon": "public/am.jpg",
       "description": "Études techniques, modélisation BIM et conception de structures",
       "projects": [
         {
