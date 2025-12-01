@@ -65,14 +65,14 @@ const Projects = ({ projects, isDark }) => {
     <section id="projects" className="min-h-screen pt-20 flex items-center">
       <div className="w-full">
         <div className="container mx-auto px-6">
-          <div className={glass rounded-3xl p-8 md:p-12 ${isDark ? 'bg-gray-900/30' : 'bg-white/30'} max-w-6xl mx-auto}>
+          <div className={`glass rounded-3xl p-8 md:p-12 ${isDark ? 'bg-gray-900/30' : 'bg-white/30'} max-w-6xl mx-auto`}>
             
             {/* En-tête de section */}
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold font-display mb-4 bg-gradient-to-br from-civil-blue to-civil-teal bg-clip-text text-transparent">
                 Mes Projets
               </h2>
-              <p className={text-lg max-w-2xl mx-auto ${isDark ? 'text-gray-400' : 'text-gray-500'}}>
+              <p className={`text-lg max-w-2xl mx-auto ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
                 Découvrez mes réalisations en génie civil, BIM et gestion de projets
               </p>
               <div className="w-24 h-1 bg-gradient-to-r from-civil-blue to-civil-teal rounded-full mx-auto mt-4"></div>
@@ -148,11 +148,11 @@ const Projects = ({ projects, isDark }) => {
 
                   {/* Contenu du projet */}
                   <div className="p-6">
-                    <h3 className={text-xl font-semibold mb-3 ${isDark ? 'text-white' : 'text-gray-800'}}>
+                    <h3 className={`text-xl font-semibold mb-3 ${isDark ? 'text-white' : 'text-gray-800'}`}>
                       {project.name}
                     </h3>
                     
-                    <p className={text-sm mb-4 line-clamp-2 ${isDark ? 'text-gray-400' : 'text-gray-500'}}>
+                    <p className={`text-sm mb-4 line-clamp-2 ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
                       {project.description}
                     </p>
 
@@ -179,11 +179,11 @@ const Projects = ({ projects, isDark }) => {
 
                     {/* Date et fichiers */}
                     <div className="flex items-center justify-between text-xs">
-                      <div className={flex items-center gap-1 ${isDark ? 'text-gray-400' : 'text-gray-500'}}>
+                      <div className={`flex items-center gap-1 ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
                         <FontAwesomeIcon icon={faCalendarAlt} className="w-3 h-3" />
                         <span>{formatDate(project.startDate)}</span>
                       </div>
-                      <div className={flex items-center gap-1 ${isDark ? 'text-gray-400' : 'text-gray-500'}}>
+                      <div className={`flex items-center gap-1 ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
                         <FontAwesomeIcon icon={faDownload} className="w-3 h-3" />
                         <span>{project.downloadableFiles.length} fichiers</span>
                       </div>
@@ -195,7 +195,7 @@ const Projects = ({ projects, isDark }) => {
 
             {/* Message si aucun projet */}
             {filteredProjects.length === 0 && (
-              <div className={text-center py-12 ${isDark ? 'text-gray-400' : 'text-gray-500'}}>
+              <div className={`text-center py-12 ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
                 <FontAwesomeIcon icon={faFolder} className="text-4xl mb-4 opacity-50" />
                 <p>Aucun projet trouvé dans cette catégorie</p>
               </div>
@@ -224,10 +224,10 @@ const Projects = ({ projects, isDark }) => {
                   >
                     <FontAwesomeIcon 
                       icon={faTimes} 
-                      className={w-5 h-5 ${isDark ? 'text-gray-400' : 'text-gray-500'}} 
+                      className={`w-5 h-5 ${isDark ? 'text-gray-400' : 'text-gray-500'}`} 
                     />
                   </button>
-                  <h3 className={text-2xl font-bold ${isDark ? 'text-white' : 'text-gray-800'}}>
+                  <h3 className={`text-2xl font-bold ${isDark ? 'text-white' : 'text-gray-800'}`}>
                     {selectedProject.name}
                   </h3>
                 </div>
@@ -241,7 +241,7 @@ const Projects = ({ projects, isDark }) => {
                   >
                     <FontAwesomeIcon 
                       icon={faArrowLeft} 
-                      className={w-4 h-4 ${isDark ? 'text-gray-400' : 'text-gray-500'}} 
+                      className={`w-4 h-4 ${isDark ? 'text-gray-400' : 'text-gray-500'}`} 
                     />
                   </button>
                   <button
@@ -252,7 +252,7 @@ const Projects = ({ projects, isDark }) => {
                   >
                     <FontAwesomeIcon 
                       icon={faArrowRight} 
-                      className={w-4 h-4 ${isDark ? 'text-gray-400' : 'text-gray-500'}} 
+                      className={`w-4 h-4 ${isDark ? 'text-gray-400' : 'text-gray-500'}`} 
                     />
                   </button>
                 </div>
@@ -264,7 +264,7 @@ const Projects = ({ projects, isDark }) => {
                 }`}>
                   {selectedProject.category}
                 </span>
-                <div className={flex items-center gap-2 text-sm ${isDark ? 'text-gray-400' : 'text-gray-500'}}>
+                <div className={`flex items-center gap-2 text-sm ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
                   <FontAwesomeIcon icon={faCalendarAlt} className="w-4 h-4" />
                   <span>
                     {formatDate(selectedProject.startDate)} - {formatDate(selectedProject.endDate)}
@@ -295,20 +295,20 @@ const Projects = ({ projects, isDark }) => {
 
               {/* Description */}
               <div>
-                <h4 className={text-lg font-semibold mb-3 ${isDark ? 'text-white' : 'text-gray-800'}}>
+                <h4 className={`text-lg font-semibold mb-3 ${isDark ? 'text-white' : 'text-gray-800'}`}>
                   Description
                 </h4>
-                <p className={leading-relaxed ${isDark ? 'text-gray-300' : 'text-gray-600'}}>
+                <p className={`leading-relaxed ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
                   {selectedProject.description}
                 </p>
               </div>
 
               {/* Tâches réalisées */}
               <div>
-                <h4 className={text-lg font-semibold mb-3 ${isDark ? 'text-white' : 'text-gray-800'}}>
+                <h4 className={`text-lg font-semibold mb-3 ${isDark ? 'text-white' : 'text-gray-800'}`}>
                   Tâches réalisées
                 </h4>
-                <ul className={space-y-2 ${isDark ? 'text-gray-300' : 'text-gray-600'}}>
+                <ul className={`space-y-2 ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
                   {selectedProject.tasks.map((task, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <div className={`w-2 h-2 rounded-full mt-2 flex-shrink-0 ${
@@ -322,7 +322,7 @@ const Projects = ({ projects, isDark }) => {
 
               {/* Technologies utilisées */}
               <div>
-                <h4 className={text-lg font-semibold mb-3 ${isDark ? 'text-white' : 'text-gray-800'}}>
+                <h4 className={`text-lg font-semibold mb-3 ${isDark ? 'text-white' : 'text-gray-800'}`}>
                   <FontAwesomeIcon icon={faCode} className="w-4 h-4 mr-2" />
                   Technologies utilisées
                 </h4>
@@ -344,7 +344,7 @@ const Projects = ({ projects, isDark }) => {
 
               {/* Fichiers téléchargeables */}
               <div>
-                <h4 className={text-lg font-semibold mb-3 ${isDark ? 'text-white' : 'text-gray-800'}}>
+                <h4 className={`text-lg font-semibold mb-3 ${isDark ? 'text-white' : 'text-gray-800'}`}>
                   <FontAwesomeIcon icon={faDownload} className="w-4 h-4 mr-2" />
                   Documents associés
                 </h4>
@@ -368,17 +368,17 @@ const Projects = ({ projects, isDark }) => {
                           }`} 
                         />
                         <div>
-                          <p className={font-medium ${isDark ? 'text-white' : 'text-gray-800'}}>
+                          <p className={`font-medium ${isDark ? 'text-white' : 'text-gray-800'}`}>
                             {file.name}
                           </p>
-                          <p className={text-sm ${isDark ? 'text-gray-400' : 'text-gray-500'}}>
+                          <p className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>
                             {file.type.toUpperCase()} • Télécharger
                           </p>
                         </div>
                       </div>
                       <FontAwesomeIcon 
                         icon={faExternalLinkAlt} 
-                        className={w-4 h-4 ${isDark ? 'text-gray-400' : 'text-gray-500'}} 
+                        className={`w-4 h-4 ${isDark ? 'text-gray-400' : 'text-gray-500'}`} 
                       />
                     </a>
                   ))}
