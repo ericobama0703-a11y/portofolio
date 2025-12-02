@@ -256,7 +256,28 @@
         {"name": "Planning des travaux", "url": "/documents/liberman-planning.mpp", "type": "mpp", "icon": "chart-line"},
         {"name": "Rapport de contrôle qualité", "url": "/documents/liberman-qualite.pdf", "type": "pdf", "icon": "file-pdf"}
       ]
+    },
+    {
+      "name": "Construction d'un bâtiment de type R+3 à usage scolaire",
+      "category": "Contrôle qualité/Coordination",
+      "image": "/images/projects/liberman.jpg",
+      "startDate": "2023-02-01",
+      "endDate": "2023-07-31",
+      "description": "Extension scolaire avec contrôle qualité et coordination des travaux",
+      "tasks": [
+        "Rédaction des dossiers techniques",
+        "Supervision de la conformité du béton",
+        "Contrôle durant la phase de réalisation",
+        "Élaboration de plannings détaillés"
+      ],
+      "technologies": ["MS Project", "AutoCAD", "Suite Office"],
+      "downloadableFiles": [
+        {"name": "Dossier technique", "url": "/documents/liberman-dossier.pdf", "type": "pdf", "icon": "file-pdf"},
+        {"name": "Planning des travaux", "url": "/documents/liberman-planning.mpp", "type": "mpp", "icon": "chart-line"},
+        {"name": "Rapport de contrôle qualité", "url": "/documents/liberman-qualite.pdf", "type": "pdf", "icon": "file-pdf"}
+      ]
     }
+
   ],
 
   "contact": {
