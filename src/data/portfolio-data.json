@@ -35,9 +35,9 @@
       {"name": "Autodesk AutoCAD", "level": 90, "icon": "draw-polygon", "category": "DAO"},
       {"name": "Autodesk Robot Structural Analysis", "level": 90, "icon": "calculator", "category": "Structure"},
       {"name": "MS Project", "level": 90, "icon": "chart-line", "category": "Gestion"},
-      {"name": "Suite Office", "level": 75, "icon": "file-alt", "category": "Bureautique"},
-      {"name": "Maitrise de Eurocode", "level": 70, "icon": "balance-scale", "category": "Normes"},
-      {"name": "Graitec", "level": 70, "icon": "cube", "category": "Structure"},
+      {"name": "Suite Office", "level": 85, "icon": "file-alt", "category": "Bureautique"},
+      {"name": "Maitrise de Eurocode", "level": 85, "icon": "balance-scale", "category": "Normes"},
+      {"name": "Graitec", "level": 80, "icon": "cube", "category": "Structure"},
       {"name": "Python", "level": 50, "icon": "code", "category": "Programmation"}
     ],
     "professional": [
