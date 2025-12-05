@@ -347,14 +347,15 @@
       "tasks": [
         "Études, modélisation et dimensionnement des structures béton",
         "Élaboration de la maquette numérique BIM sous Revit",
-        "Analyse énergétique du bâtiment",
-        "Étude des fluides via Revit MEP"
+        "Supervision de la conformité du béton",
+        "Élaboration de plannings détaillés des travaux et coordination des différents corps d'état",
+        "Rédaction des dossiers techniques et des rapports d'activité"
       ],
-      "technologies": ["Revit", "Robot Structural Analysis", "Revit MEP", "AutoCAD"],
+      "technologies": ["Revit", "Robot Structural Analysis", "Revit MEP", "AutoCAD","MS Project","Suite Office"],
       "downloadableFiles": [
-        {"name": "Étude structure complète", "url": "/documents/pdcva-etude.pdf", "type": "pdf", "icon": "file-pdf"},
+        {"name": "Étude structure complète", "url": "/documents/plan de coffrage projet r+2.pdf", "type": "pdf", "icon": "file-pdf"},
         {"name": "Analyse énergétique", "url": "/documents/pdcva-energie.pdf", "type": "pdf", "icon": "file-pdf"},
-        {"name": "Plans MEP", "url": "/documents/pdcva-mep.zip", "type": "zip", "icon": "file-archive"}
+        {"name": "Conception des plans architecturaux et des maquettes BIM", "url": "/documents/pdcva-mep.zip", "type": "zip", "icon": "file-archive"}
       ]
     }
   
