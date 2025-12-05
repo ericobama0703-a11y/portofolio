@@ -316,6 +316,46 @@
         {"name": "Analyse énergétique", "url": "/documents/pdcva-energie.pdf", "type": "pdf", "icon": "file-pdf"},
         {"name": "Plans MEP", "url": "/documents/pdcva-mep.zip", "type": "zip", "icon": "file-archive"}
       ]
+    },
+    {
+      "name": "Projet de construction d'un batiment R+4 à usage d'habitation",
+      "category": "Étude technique",
+      "image": "/images/projects/rema.jpg",
+      "startDate": "2024-05-10",
+      "endDate": "2024-06-05",
+      "description": "Construstion de la résidance Rema ",
+      "tasks": [
+        "Études, modélisation et dimensionnement des structures béton",
+        "Élaboration de la maquette numérique BIM sous Revit",
+        "Analyse énergétique du bâtiment",
+        "Étude des fluides via Revit MEP"
+      ],
+      "technologies": ["Revit", "Robot Structural Analysis", "Revit MEP", "AutoCAD"],
+      "downloadableFiles": [
+        {"name": "Étude structure complète", "url": "/documents/pdcva-etude.pdf", "type": "pdf", "icon": "file-pdf"},
+        {"name": "Analyse énergétique", "url": "/documents/pdcva-energie.pdf", "type": "pdf", "icon": "file-pdf"},
+        {"name": "Plans MEP", "url": "/documents/pdcva-mep.zip", "type": "zip", "icon": "file-archive"}
+      ]
+    },
+    {
+      "name": "Projet de construction d'un immeuble R+2 à usage d'habitation",
+      "category": "Contrôle qualité/Coordination",
+      "image": "/images/projects/r+2.jpg",
+      "startDate": "2024-06-07",
+      "endDate": "2025-01-05",
+      "description": "Construction d'un batiment de type R+2 en plein coeur de Yaounde",
+      "tasks": [
+        "Études, modélisation et dimensionnement des structures béton",
+        "Élaboration de la maquette numérique BIM sous Revit",
+        "Analyse énergétique du bâtiment",
+        "Étude des fluides via Revit MEP"
+      ],
+      "technologies": ["Revit", "Robot Structural Analysis", "Revit MEP", "AutoCAD"],
+      "downloadableFiles": [
+        {"name": "Étude structure complète", "url": "/documents/pdcva-etude.pdf", "type": "pdf", "icon": "file-pdf"},
+        {"name": "Analyse énergétique", "url": "/documents/pdcva-energie.pdf", "type": "pdf", "icon": "file-pdf"},
+        {"name": "Plans MEP", "url": "/documents/pdcva-mep.zip", "type": "zip", "icon": "file-archive"}
+      ]
     }
   
 
