@@ -298,11 +298,11 @@
       ]
     },
     {
-      "name": "Projet de construction du palais de justice de baham",
+      "name": "Projet de construction d'un plein pied moderne",
       "category": "Étude technique",
-      "image": "/images/projects/baham.jpg",
-      "startDate": "2023-11-01",
-      "endDate": "2024-01-30",
+      "image": "/images/projects/plein-pied.jpg",
+      "startDate": "2024-02-07",
+      "endDate": "2024-03-05",
       "description": "Laboratoire de contrôle qualité avec études techniques avancées",
       "tasks": [
         "Études, modélisation et dimensionnement des structures béton",
