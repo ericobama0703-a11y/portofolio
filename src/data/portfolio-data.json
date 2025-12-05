@@ -272,7 +272,7 @@
       ],
       "technologies": ["MS Project", "AutoCAD", "Suite Office"],
       "downloadableFiles": [
-        {"name": "Dossier technique", "url": "/documents/liberman-dossier.pdf", "type": "pdf", "icon": "file-pdf"},
+        {"name": "Dossier technique", "url": "/documents/plan archi villa moderne.pdf", "type": "pdf", "icon": "file-pdf"},
         {"name": "Planning des travaux", "url": "/documents/liberman-planning.mpp", "type": "mpp", "icon": "chart-line"},
         {"name": "Rapport de contrôle qualité", "url": "/documents/liberman-qualite.pdf", "type": "pdf", "icon": "file-pdf"}
       ]
