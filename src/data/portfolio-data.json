@@ -296,7 +296,28 @@
         {"name": "Planning des travaux", "url": "/documents/liberman-planning.mpp", "type": "mpp", "icon": "chart-line"},
         {"name": "Rapport de contrôle qualité", "url": "/documents/liberman-qualite.pdf", "type": "pdf", "icon": "file-pdf"}
       ]
+    },
+    {
+      "name": "Projet de construction du laboratoire de contrôle qualité des produits agricoles de Douala",
+      "category": "Étude technique",
+      "image": "/images/projects/pdcva.jpg",
+      "startDate": "2024-01-01",
+      "endDate": "2024-06-30",
+      "description": "Laboratoire de contrôle qualité avec études techniques avancées",
+      "tasks": [
+        "Études, modélisation et dimensionnement des structures béton",
+        "Élaboration de la maquette numérique BIM sous Revit",
+        "Analyse énergétique du bâtiment",
+        "Étude des fluides via Revit MEP"
+      ],
+      "technologies": ["Revit", "Robot Structural Analysis", "Revit MEP", "AutoCAD"],
+      "downloadableFiles": [
+        {"name": "Étude structure complète", "url": "/documents/pdcva-etude.pdf", "type": "pdf", "icon": "file-pdf"},
+        {"name": "Analyse énergétique", "url": "/documents/pdcva-energie.pdf", "type": "pdf", "icon": "file-pdf"},
+        {"name": "Plans MEP", "url": "/documents/pdcva-mep.zip", "type": "zip", "icon": "file-archive"}
+      ]
     }
+  
 
   ],
 
